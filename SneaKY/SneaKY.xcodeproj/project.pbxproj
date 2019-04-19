@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A638C28A226A01950000F518 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A638C289226A01950000F518 /* AppDelegate.swift */; };
+		A638C28C226A01950000F518 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A638C28B226A01950000F518 /* ViewController.swift */; };
+		A638C28F226A01960000F518 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A638C28D226A01960000F518 /* Main.storyboard */; };
+		A638C291226A01970000F518 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A638C290226A01970000F518 /* Assets.xcassets */; };
+		A638C294226A01970000F518 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A638C292226A01970000F518 /* LaunchScreen.storyboard */; };
+		A638C29F226A01970000F518 /* SneaKYTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A638C29E226A01970000F518 /* SneaKYTests.swift */; };
+		A638C2AA226A01970000F518 /* SneaKYUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A638C2A9226A01970000F518 /* SneaKYUITests.swift */; };
+		A638C2B8226A05110000F518 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A638C2B7226A05110000F518 /* CollectionViewCell.swift */; };
+		A638C2BA226A0E150000F518 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A638C2B9226A0E150000F518 /* MainViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A638C29B226A01970000F518 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A638C27E226A01950000F518 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A638C285226A01950000F518;
+			remoteInfo = SneaKY;
+		};
+		A638C2A6226A01970000F518 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A638C27E226A01950000F518 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A638C285226A01950000F518;
+			remoteInfo = SneaKY;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A638C286226A01950000F518 /* SneaKY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SneaKY.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A638C289226A01950000F518 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A638C28B226A01950000F518 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A638C28E226A01960000F518 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A638C290226A01970000F518 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A638C293226A01970000F518 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A638C295226A01970000F518 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A638C29A226A01970000F518 /* SneaKYTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SneaKYTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A638C29E226A01970000F518 /* SneaKYTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SneaKYTests.swift; sourceTree = "<group>"; };
+		A638C2A0226A01970000F518 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A638C2A5226A01970000F518 /* SneaKYUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SneaKYUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A638C2A9226A01970000F518 /* SneaKYUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SneaKYUITests.swift; sourceTree = "<group>"; };
+		A638C2AB226A01970000F518 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A638C2B7226A05110000F518 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		A638C2B9226A0E150000F518 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A638C283226A01950000F518 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A638C297226A01970000F518 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A638C2A2226A01970000F518 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A638C27D226A01950000F518 = {
+			isa = PBXGroup;
+			children = (
+				A638C288226A01950000F518 /* SneaKY */,
+				A638C29D226A01970000F518 /* SneaKYTests */,
+				A638C2A8226A01970000F518 /* SneaKYUITests */,
+				A638C287226A01950000F518 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A638C287226A01950000F518 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A638C286226A01950000F518 /* SneaKY.app */,
+				A638C29A226A01970000F518 /* SneaKYTests.xctest */,
+				A638C2A5226A01970000F518 /* SneaKYUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A638C288226A01950000F518 /* SneaKY */ = {
+			isa = PBXGroup;
+			children = (
+				A638C289226A01950000F518 /* AppDelegate.swift */,
+				A638C28B226A01950000F518 /* ViewController.swift */,
+				A638C2B9226A0E150000F518 /* MainViewController.swift */,
+				A638C28D226A01960000F518 /* Main.storyboard */,
+				A638C290226A01970000F518 /* Assets.xcassets */,
+				A638C292226A01970000F518 /* LaunchScreen.storyboard */,
+				A638C295226A01970000F518 /* Info.plist */,
+				A638C2B7226A05110000F518 /* CollectionViewCell.swift */,
+			);
+			path = SneaKY;
+			sourceTree = "<group>";
+		};
+		A638C29D226A01970000F518 /* SneaKYTests */ = {
+			isa = PBXGroup;
+			children = (
+				A638C29E226A01970000F518 /* SneaKYTests.swift */,
+				A638C2A0226A01970000F518 /* Info.plist */,
+			);
+			path = SneaKYTests;
+			sourceTree = "<group>";
+		};
+		A638C2A8226A01970000F518 /* SneaKYUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A638C2A9226A01970000F518 /* SneaKYUITests.swift */,
+				A638C2AB226A01970000F518 /* Info.plist */,
+			);
+			path = SneaKYUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A638C285226A01950000F518 /* SneaKY */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A638C2AE226A01970000F518 /* Build configuration list for PBXNativeTarget "SneaKY" */;
+			buildPhases = (
+				A638C282226A01950000F518 /* Sources */,
+				A638C283226A01950000F518 /* Frameworks */,
+				A638C284226A01950000F518 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SneaKY;
+			productName = SneaKY;
+			productReference = A638C286226A01950000F518 /* SneaKY.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A638C299226A01970000F518 /* SneaKYTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A638C2B1226A01970000F518 /* Build configuration list for PBXNativeTarget "SneaKYTests" */;
+			buildPhases = (
+				A638C296226A01970000F518 /* Sources */,
+				A638C297226A01970000F518 /* Frameworks */,
+				A638C298226A01970000F518 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A638C29C226A01970000F518 /* PBXTargetDependency */,
+			);
+			name = SneaKYTests;
+			productName = SneaKYTests;
+			productReference = A638C29A226A01970000F518 /* SneaKYTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A638C2A4226A01970000F518 /* SneaKYUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A638C2B4226A01970000F518 /* Build configuration list for PBXNativeTarget "SneaKYUITests" */;
+			buildPhases = (
+				A638C2A1226A01970000F518 /* Sources */,
+				A638C2A2226A01970000F518 /* Frameworks */,
+				A638C2A3226A01970000F518 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A638C2A7226A01970000F518 /* PBXTargetDependency */,
+			);
+			name = SneaKYUITests;
+			productName = SneaKYUITests;
+			productReference = A638C2A5226A01970000F518 /* SneaKYUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A638C27E226A01950000F518 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "thanadol rungjitwaranon";
+				TargetAttributes = {
+					A638C285226A01950000F518 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					A638C299226A01970000F518 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = A638C285226A01950000F518;
+					};
+					A638C2A4226A01970000F518 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = A638C285226A01950000F518;
+					};
+				};
+			};
+			buildConfigurationList = A638C281226A01950000F518 /* Build configuration list for PBXProject "SneaKY" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A638C27D226A01950000F518;
+			productRefGroup = A638C287226A01950000F518 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A638C285226A01950000F518 /* SneaKY */,
+				A638C299226A01970000F518 /* SneaKYTests */,
+				A638C2A4226A01970000F518 /* SneaKYUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A638C284226A01950000F518 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A638C294226A01970000F518 /* LaunchScreen.storyboard in Resources */,
+				A638C291226A01970000F518 /* Assets.xcassets in Resources */,
+				A638C28F226A01960000F518 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A638C298226A01970000F518 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A638C2A3226A01970000F518 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A638C282226A01950000F518 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A638C28C226A01950000F518 /* ViewController.swift in Sources */,
+				A638C28A226A01950000F518 /* AppDelegate.swift in Sources */,
+				A638C2B8226A05110000F518 /* CollectionViewCell.swift in Sources */,
+				A638C2BA226A0E150000F518 /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A638C296226A01970000F518 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A638C29F226A01970000F518 /* SneaKYTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A638C2A1226A01970000F518 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A638C2AA226A01970000F518 /* SneaKYUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A638C29C226A01970000F518 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A638C285226A01950000F518 /* SneaKY */;
+			targetProxy = A638C29B226A01970000F518 /* PBXContainerItemProxy */;
+		};
+		A638C2A7226A01970000F518 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A638C285226A01950000F518 /* SneaKY */;
+			targetProxy = A638C2A6226A01970000F518 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A638C28D226A01960000F518 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A638C28E226A01960000F518 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A638C292226A01970000F518 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A638C293226A01970000F518 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A638C2AC226A01970000F518 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A638C2AD226A01970000F518 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A638C2AF226A01970000F518 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SneaKY/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.France.SneaKY;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A638C2B0226A01970000F518 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SneaKY/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.France.SneaKY;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A638C2B2226A01970000F518 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SneaKYTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.France.SneaKYTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SneaKY.app/SneaKY";
+			};
+			name = Debug;
+		};
+		A638C2B3226A01970000F518 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SneaKYTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.France.SneaKYTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SneaKY.app/SneaKY";
+			};
+			name = Release;
+		};
+		A638C2B5226A01970000F518 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SneaKYUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.France.SneaKYUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SneaKY;
+			};
+			name = Debug;
+		};
+		A638C2B6226A01970000F518 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SneaKYUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.France.SneaKYUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SneaKY;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A638C281226A01950000F518 /* Build configuration list for PBXProject "SneaKY" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A638C2AC226A01970000F518 /* Debug */,
+				A638C2AD226A01970000F518 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A638C2AE226A01970000F518 /* Build configuration list for PBXNativeTarget "SneaKY" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A638C2AF226A01970000F518 /* Debug */,
+				A638C2B0226A01970000F518 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A638C2B1226A01970000F518 /* Build configuration list for PBXNativeTarget "SneaKYTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A638C2B2226A01970000F518 /* Debug */,
+				A638C2B3226A01970000F518 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A638C2B4226A01970000F518 /* Build configuration list for PBXNativeTarget "SneaKYUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A638C2B5226A01970000F518 /* Debug */,
+				A638C2B6226A01970000F518 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A638C27E226A01950000F518 /* Project object */;
+}
