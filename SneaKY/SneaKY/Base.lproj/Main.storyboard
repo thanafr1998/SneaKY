@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Cart-->
         <scene sceneID="ZsC-jv-C1R">
             <objects>
                 <viewController id="ulK-Tl-fH7" sceneMemberID="viewController">
@@ -20,13 +20,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="rj2-1f-gQH"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="W7C-bd-ml9"/>
+                    <tabBarItem key="tabBarItem" title="Cart" image="cart" id="W7C-bd-ml9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="guU-FU-YTs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="67" y="47"/>
         </scene>
-        <!--Item-->
+        <!--Profile-->
         <scene sceneID="uF1-co-CJU">
             <objects>
                 <viewController id="icr-0D-Qxs" sceneMemberID="viewController">
@@ -36,13 +36,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="1Rw-Tn-ubf"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="RT4-xp-3gI"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile" id="RT4-xp-3gI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zZS-RQ-lqW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="67" y="846"/>
         </scene>
-        <!--Item 1-->
+        <!--Store-->
         <scene sceneID="5ec-br-bzy">
             <objects>
                 <viewController id="hul-wJ-utY" customClass="MainViewController" customModule="SneaKY" customModuleProvider="target" sceneMemberID="viewController">
@@ -128,11 +128,31 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="NjL-9c-oSW"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="QWs-qa-MZ0"/>
+                    <tabBarItem key="tabBarItem" title="Store" image="store" id="QWs-qa-MZ0"/>
+                    <connections>
+                        <segue destination="ToU-mp-lCN" kind="show" id="a2p-mS-dLV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d3T-n6-WOT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="66.666666666666671" y="-828.34821428571422"/>
+        </scene>
+        <!--Store-->
+        <scene sceneID="uf3-Et-QUp">
+            <objects>
+                <viewController id="ToU-mp-lCN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WKi-5q-VQA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="hI1-oM-ejN"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Store" image="store" id="frM-bD-yMq"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M5c-fW-JJG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="925" y="-828"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="W8d-PP-BkR">
@@ -143,13 +163,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XbC-MG-H2P">
-                                <rect key="frame" x="135" y="433" width="144" height="30"/>
+                                <rect key="frame" x="135" y="559" width="144" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="NextPage:" destination="2D1-C7-Ogg" eventType="touchUpInside" id="RMW-Wj-M7w"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0t0-uZ-iYv">
+                                <rect key="frame" x="159" y="340" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3uy-xU-tFc">
+                                <rect key="frame" x="159" y="433" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSV-Sf-lWk">
+                                <rect key="frame" x="186" y="181" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="xV2-HP-3lf"/>
@@ -184,5 +225,8 @@
     </scenes>
     <resources>
         <image name="1" width="1600" height="1600"/>
+        <image name="cart" width="24" height="24"/>
+        <image name="profile" width="24" height="24"/>
+        <image name="store" width="24" height="24"/>
     </resources>
 </document>
