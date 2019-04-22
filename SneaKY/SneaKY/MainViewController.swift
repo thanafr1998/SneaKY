@@ -10,11 +10,17 @@ import UIKit
 
 class MainViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
     
-    var shoes = [["name":"white","info":"1"],["name":"grey","info":"2"],["name":"black","info":"3"]]
+    let shoes = [["name":"white","info":"1","price":"5400"],["name":"grey","info":"2","price":"5000"],["name":"black","info":"3","price":"4800"],["name":"white","info":"1","price":"5400"],["name":"grey","info":"2","price":"5000"],["name":"black","info":"3","price":"4800"],["name":"white","info":"1","price":"5400"],["name":"grey","info":"2","price":"5000"],["name":"black","info":"3","price":"4800"]]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // Hide the navigation bar for current view controller
+        self.navigationController?.isNavigationBarHidden = true
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -22,15 +28,16 @@ class MainViewController: UIViewController,UICollectionViewDelegate,UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return shoes.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell:CollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
+        let cell:CollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CollectionViewCell
         
         cell.ShoeInfo.text =  self.shoes[indexPath.row]["info"]
         cell.ShoeImage.image = UIImage(named: self.shoes[indexPath.row]["name"]!)
+        cell.ShoePrice.text = "฿ " + self.shoes[indexPath.row]["price"]!
         
         return cell
     }

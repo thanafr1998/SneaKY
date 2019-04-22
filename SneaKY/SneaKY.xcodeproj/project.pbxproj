@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A60C0AF2226DD7E800CA788E /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C0AF1226DD7E800CA788E /* InfoViewController.swift */; };
 		A638C28A226A01950000F518 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A638C289226A01950000F518 /* AppDelegate.swift */; };
 		A638C28C226A01950000F518 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A638C28B226A01950000F518 /* ViewController.swift */; };
 		A638C28F226A01960000F518 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A638C28D226A01960000F518 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A60C0AF1226DD7E800CA788E /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		A638C286226A01950000F518 /* SneaKY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SneaKY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A638C289226A01950000F518 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A638C28B226A01950000F518 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				A638C289226A01950000F518 /* AppDelegate.swift */,
 				A638C28B226A01950000F518 /* ViewController.swift */,
 				A638C2B9226A0E150000F518 /* MainViewController.swift */,
+				A60C0AF1226DD7E800CA788E /* InfoViewController.swift */,
 				A638C28D226A01960000F518 /* Main.storyboard */,
 				A638C290226A01970000F518 /* Assets.xcassets */,
 				A638C292226A01970000F518 /* LaunchScreen.storyboard */,
@@ -266,6 +269,7 @@
 				A638C28A226A01950000F518 /* AppDelegate.swift in Sources */,
 				A638C2B8226A05110000F518 /* CollectionViewCell.swift in Sources */,
 				A638C2BA226A0E150000F518 /* MainViewController.swift in Sources */,
+				A60C0AF2226DD7E800CA788E /* InfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

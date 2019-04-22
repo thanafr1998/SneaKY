@@ -11,5 +11,6 @@ import UIKit
 class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var ShoeImage: UIImageView!
     @IBOutlet weak var ShoeInfo: UILabel!
+    @IBOutlet weak var ShoePrice: UILabel!
     
 }
