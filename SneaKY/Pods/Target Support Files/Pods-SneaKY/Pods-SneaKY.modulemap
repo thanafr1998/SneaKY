@@ -1,0 +1,6 @@
+framework module Pods_SneaKY {
+  umbrella header "Pods-SneaKY-umbrella.h"
+
+  export *
+  module * { export * }
+}

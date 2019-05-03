@@ -10,7 +10,7 @@ import UIKit
 
 class CartTableViewController: UITableViewController {
 
-    var shoesData = [[],[],[]]
+    static var shoesData = [["name":"white","image":"white","price":"5400"],[],[]] as [Any]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +31,7 @@ class CartTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return self.shoesData.count
+        return CartTableViewController.shoesData.count
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

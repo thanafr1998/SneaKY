@@ -18,6 +18,16 @@ class InfoViewController: UIViewController {
     var button = dropDownBtn()
     
     @IBAction func Rent(_ sender: Any) {
+       func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//            if(segue.identifier=="rent"){
+//                let dest : CartTableViewController? = segue.destination as? CartTableViewController;
+//                //            [view des]
+//                let name = self.ShoeName.text
+//                let image = self.ShoeImage
+//                let price = self.ShoePrice.text
+//                dest?.shoesData.append(["name":name,"image":image,"price":price])
+//            }
+       }
     }
     
     override func viewDidLoad() {

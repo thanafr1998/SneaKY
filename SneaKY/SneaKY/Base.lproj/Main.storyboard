@@ -13,7 +13,7 @@
         <!--Profile-->
         <scene sceneID="uF1-co-CJU">
             <objects>
-                <viewController id="icr-0D-Qxs" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileViewController" id="icr-0D-Qxs" customClass="ProfileViewController" customModule="SneaKY" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BWy-8v-Ukr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,15 +25,15 @@
                                     <color key="titleColor" red="1" green="0.0" blue="0.1592381612066962" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <segue destination="2D1-C7-Ogg" kind="show" id="I58-pE-CBT"/>
+                                    <segue destination="2D1-C7-Ogg" kind="show" identifier="profile" id="I58-pE-CBT"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="73D-4x-wl5">
                                 <rect key="frame" x="87" y="111" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGP-l3-7js">
-                                <rect key="frame" x="186" y="295" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGP-l3-7js">
+                                <rect key="frame" x="87" y="295" width="240" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -44,10 +44,13 @@
                         <viewLayoutGuide key="safeArea" id="1Rw-Tn-ubf"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="profile" id="RT4-xp-3gI"/>
+                    <connections>
+                        <outlet property="user" destination="zGP-l3-7js" id="A6N-qu-QtC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zZS-RQ-lqW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="67" y="846"/>
+            <point key="canvasLocation" x="66.666666666666671" y="845.75892857142856"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="5ec-br-bzy">
@@ -91,7 +94,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7u3-Ix-aIl">
                                 <rect key="frame" x="20" y="209" width="374" height="604"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SFw-Zm-OwU">
                                     <size key="itemSize" width="170" height="220"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -106,14 +109,15 @@
                                             <rect key="frame" x="0.0" y="0.0" width="170" height="240"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mgG-eg-b4Z">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sneaker" translatesAutoresizingMaskIntoConstraints="NO" id="mgG-eg-b4Z">
                                                     <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXI-aa-iOr">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YXI-aa-iOr">
                                                     <rect key="frame" x="0.0" y="172" width="170" height="68"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -148,11 +152,11 @@
                                 </connections>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="0.60000002379999995" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="NjL-9c-oSW"/>
                     </view>
                     <navigationItem key="navigationItem" leftItemsSupplementBackButton="YES" id="WKB-ou-yo1">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="012-Wa-KDh"/>
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Ewa-uS-b2f"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d3T-n6-WOT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -214,7 +218,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="Rent:" destination="ToU-mp-lCN" eventType="touchUpInside" id="q8l-Bg-tjU"/>
-                                    <segue destination="hul-wJ-utY" kind="show" identifier="Rent" id="gE6-9z-GwD"/>
+                                    <segue destination="hul-wJ-utY" kind="show" identifier="rent" id="gE6-9z-GwD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -222,7 +226,7 @@
                         <viewLayoutGuide key="safeArea" id="hI1-oM-ejN"/>
                     </view>
                     <navigationItem key="navigationItem" title="Info" leftItemsSupplementBackButton="YES" id="ibp-Ph-95n">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="tRB-3M-peb"/>
+                        <barButtonItem key="backBarButtonItem" title="Back" id="SOj-xv-Xt4"/>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -285,6 +289,7 @@
                         <viewLayoutGuide key="safeArea" id="xV2-HP-3lf"/>
                     </view>
                     <connections>
+                        <outlet property="Username" destination="0t0-uZ-iYv" id="24n-lL-8kG"/>
                         <segue destination="tqd-0L-nHg" kind="show" identifier="enter" id="1uM-f6-sle"/>
                     </connections>
                 </viewController>
@@ -411,10 +416,12 @@
         <image name="1" width="1600" height="1600"/>
         <image name="cart" width="24" height="24"/>
         <image name="profile" width="24" height="24"/>
+        <image name="sneaker" width="800" height="800"/>
         <image name="store" width="24" height="24"/>
         <image name="white" width="600" height="600"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Fgf-kU-D0T"/>
         <segue reference="gE6-9z-GwD"/>
     </inferredMetricsTieBreakers>
 </document>
