@@ -19,8 +19,7 @@ class MainViewController: UIViewController,UICollectionViewDelegate,UICollection
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(red:0.94, green:0.95, blue:0.97, alpha:1.0);
-        
+
         // Do any additional setup after loading the view.
     }
     
