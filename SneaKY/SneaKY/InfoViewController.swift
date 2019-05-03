@@ -22,6 +22,7 @@ class InfoViewController: UIViewController {
     var name = ""
     var price = ""
     var imageURL = ""
+    static var box = true
     
     @IBAction func Rent(_ sender: Any) {
        func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -41,12 +42,13 @@ class InfoViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         self.ShoeName.text = name
+        ShoeName.sizeToFit()
         self.ShoePrice.text = price
         if let url = URL(string:imageURL){
             self.ShoeImage.af_setImage(withURL: url, placeholderImage: nil)
         }
         
-        
+        InfoViewController.box = true
         button = dropDownBtn.init(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
         button.setTitle("Size", for: .normal)
         button.setTitleColor(UIColor.blue, for: .normal)
@@ -60,6 +62,10 @@ class InfoViewController: UIViewController {
         button.heightAnchor.constraint(equalToConstant: 40).isActive = true
         
         button.dropView.dropDownOptions = ["6 US","6.5 US","7 US","7.5 US","8 US","8.5 US","9 US","9.5 US","10 US"]
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        InfoViewController.box = false
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -106,9 +112,9 @@ class dropDownBtn: UIButton, dropDownProtocol {
     override func didMoveToSuperview() {
         self.superview?.addSubview(dropView)
         self.superview?.bringSubviewToFront(dropView)
-        dropView.topAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
-        dropView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        dropView.widthAnchor.constraint(equalTo: self.widthAnchor).isActive = true
+        dropView.topAnchor.constraint(equalTo: self.bottomAnchor).isActive = InfoViewController.box
+        dropView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = InfoViewController.box
+        dropView.widthAnchor.constraint(equalTo: self.widthAnchor).isActive = InfoViewController.box
         height = dropView.heightAnchor.constraint(equalToConstant: 0)
     }
     
