@@ -41,8 +41,9 @@ class MainViewController: UIViewController,UICollectionViewDelegate,UICollection
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
         let cell:CollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CollectionViewCell
-        cell.ShoeInfo.text =  self.shoes[indexPath.row]["name"] as! String
-        
+        cell.ShoeInfo.text =  self.shoes[indexPath.row]["name"] as? String
+        cell.ShoeInfo.numberOfLines = 0;
+        cell.ShoeInfo.sizeToFit()
 
         let url = URL(string: self.shoes[indexPath.row]["image"] as! String)!
         cell.ShoeImage.af_setImage(withURL: url, placeholderImage: nil)
@@ -50,6 +51,15 @@ class MainViewController: UIViewController,UICollectionViewDelegate,UICollection
             cell.ShoePrice.text = "฿ \(str)"
         }
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = storyboard?.instantiateViewController(withIdentifier:"InfoViewController") as? InfoViewController
+        vc?.name = self.shoes[indexPath.row]["name"] as! String
+        vc?.imageURL = self.shoes[indexPath.row]["image"] as! String
+        vc?.price = self.shoes[indexPath.row]["price"] as! String
+        self.navigationController?.pushViewController(vc!, animated: true)
+        
     }
 }
 

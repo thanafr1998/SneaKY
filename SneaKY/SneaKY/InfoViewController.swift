@@ -17,6 +17,10 @@ class InfoViewController: UIViewController {
     
     var button = dropDownBtn()
     
+    var name = ""
+    var price = ""
+    var imageURL = ""
+    
     @IBAction func Rent(_ sender: Any) {
        func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 //            if(segue.identifier=="rent"){
@@ -33,6 +37,9 @@ class InfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        
+        
         button = dropDownBtn.init(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
         button.setTitle("Size", for: .normal)
         button.setTitleColor(UIColor.blue, for: .normal)
