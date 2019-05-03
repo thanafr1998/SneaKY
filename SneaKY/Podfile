@@ -6,11 +6,12 @@ target 'SneaKY' do
   use_frameworks!
 
   # Pods for SneaKY
-pod 'AlamofireImage', '~> 3.5'
-pod 'Firebase/Core'
-pod 'Alamofire', '~> 4.8.1'
+  pod 'AlamofireImage', '~> 3.5'
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'Alamofire', '~> 4.8.1'
 
- target 'SneaKYTests' do
+  target 'SneaKYTests' do
     inherit! :search_paths
     # Pods for testing
   end
