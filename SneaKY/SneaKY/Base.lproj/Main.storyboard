@@ -142,7 +142,6 @@
                                             <outlet property="ShoeImage" destination="mgG-eg-b4Z" id="dt6-ww-nvS"/>
                                             <outlet property="ShoeInfo" destination="YXI-aa-iOr" id="kUG-ho-Njm"/>
                                             <outlet property="ShoePrice" destination="ZM3-Kd-vCI" id="dpN-qi-C7w"/>
-                                            <segue destination="ToU-mp-lCN" kind="show" identifier="getInfo" id="Fgf-kU-D0T"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -166,7 +165,7 @@
         <!--Info-->
         <scene sceneID="uf3-Et-QUp">
             <objects>
-                <viewController storyboardIdentifier="InfoViewController" id="ToU-mp-lCN" customClass="InfoViewController" customModule="SneaKY" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InfoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ToU-mp-lCN" customClass="InfoViewController" customModule="SneaKY" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WKi-5q-VQA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -10,10 +10,10 @@
 		272CE534075CBC6B9C34990C /* Pods_SneaKYTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB62E3EA73A43BF114722B7D /* Pods_SneaKYTests.framework */; };
 		38ACA98483F544CE3AD870FE /* Pods_SneaKYUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1315CC6EFB83EA142D218F8 /* Pods_SneaKYUITests.framework */; };
 		7A4DEAB7A286DFC653411BED /* Pods_SneaKY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C62022544432CB2181814385 /* Pods_SneaKY.framework */; };
-		7AFABD2E227C282000FB3794 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7AFABD2D227C282000FB3794 /* GoogleService-Info.plist */; };
 		A60C0AF2226DD7E800CA788E /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C0AF1226DD7E800CA788E /* InfoViewController.swift */; };
 		A60C0AF6226DF43200CA788E /* CartTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C0AF5226DF43200CA788E /* CartTableViewController.swift */; };
 		A60C0AF8226F0D1F00CA788E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C0AF7226F0D1F00CA788E /* ProfileViewController.swift */; };
+		A61039B4227C2B730078410D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A61039B3227C2B730078410D /* GoogleService-Info.plist */; };
 		A638C28A226A01950000F518 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A638C289226A01950000F518 /* AppDelegate.swift */; };
 		A638C28C226A01950000F518 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A638C28B226A01950000F518 /* ViewController.swift */; };
 		A638C28F226A01960000F518 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A638C28D226A01960000F518 /* Main.storyboard */; };
@@ -45,11 +45,11 @@
 /* Begin PBXFileReference section */
 		1C30F2741C51B3D8E39BC810 /* Pods-SneaKYUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SneaKYUITests.debug.xcconfig"; path = "Target Support Files/Pods-SneaKYUITests/Pods-SneaKYUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		46CB53528183A85AB2859178 /* Pods-SneaKYTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SneaKYTests.debug.xcconfig"; path = "Target Support Files/Pods-SneaKYTests/Pods-SneaKYTests.debug.xcconfig"; sourceTree = "<group>"; };
-		7AFABD2D227C282000FB3794 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		80431AAF7ED3B4EC2DF096ED /* Pods-SneaKY.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SneaKY.debug.xcconfig"; path = "Target Support Files/Pods-SneaKY/Pods-SneaKY.debug.xcconfig"; sourceTree = "<group>"; };
 		A60C0AF1226DD7E800CA788E /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		A60C0AF5226DF43200CA788E /* CartTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CartTableViewController.swift; path = ../CartTableViewController.swift; sourceTree = "<group>"; };
 		A60C0AF7226F0D1F00CA788E /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A61039B3227C2B730078410D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A638C286226A01950000F518 /* SneaKY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SneaKY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A638C289226A01950000F518 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A638C28B226A01950000F518 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -132,8 +132,8 @@
 				A60C0AF7226F0D1F00CA788E /* ProfileViewController.swift */,
 				A638C2B9226A0E150000F518 /* MainViewController.swift */,
 				A60C0AF1226DD7E800CA788E /* InfoViewController.swift */,
-				7AFABD2D227C282000FB3794 /* GoogleService-Info.plist */,
 				A638C28D226A01960000F518 /* Main.storyboard */,
+				A61039B3227C2B730078410D /* GoogleService-Info.plist */,
 				A638C290226A01970000F518 /* Assets.xcassets */,
 				A638C292226A01970000F518 /* LaunchScreen.storyboard */,
 				A638C295226A01970000F518 /* Info.plist */,
@@ -292,7 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A638C294226A01970000F518 /* LaunchScreen.storyboard in Resources */,
-				7AFABD2E227C282000FB3794 /* GoogleService-Info.plist in Resources */,
+				A61039B4227C2B730078410D /* GoogleService-Info.plist in Resources */,
 				A638C291226A01970000F518 /* Assets.xcassets in Resources */,
 				A638C28F226A01960000F518 /* Main.storyboard in Resources */,
 			);

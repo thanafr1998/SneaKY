@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireImage
 
 class InfoViewController: UIViewController {
 
@@ -40,8 +42,10 @@ class InfoViewController: UIViewController {
         
         self.ShoeName.text = name
         self.ShoePrice.text = price
-        let url = URL(string: imageURL)!
-        self.ShoeImage.af_setImage(withURL: url, placeholderImage: nil)
+        if let url = URL(string:imageURL){
+            self.ShoeImage.af_setImage(withURL: url, placeholderImage: nil)
+        }
+        
         
         button = dropDownBtn.init(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
         button.setTitle("Size", for: .normal)
