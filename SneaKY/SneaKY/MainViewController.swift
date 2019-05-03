@@ -53,10 +53,12 @@ class MainViewController: UIViewController,UICollectionViewDelegate,UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let vc = storyboard?.instantiateViewController(withIdentifier:"InfoViewController") as? InfoViewController
+        let vc = storyboard?.instantiateViewController(withIdentifier: "InfoViewController") as? InfoViewController
         vc?.name = self.shoes[indexPath.row]["name"] as! String
         vc?.imageURL = self.shoes[indexPath.row]["image"] as! String
-        vc?.price = self.shoes[indexPath.row]["price"] as! String
+        if let pr = self.shoes[indexPath.row]["price"] {
+            vc?.price = "฿ \(pr)"
+        }
         self.navigationController?.pushViewController(vc!, animated: true)
         
     }
