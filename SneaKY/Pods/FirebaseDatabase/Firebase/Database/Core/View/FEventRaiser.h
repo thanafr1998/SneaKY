@@ -1,5 +1,5 @@
 /*
- * Copyright 2019 Google
+ * Copyright 2017 Google
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,18 +14,22 @@
  * limitations under the License.
  */
 
-#import <Foundation/Foundation.h>
+#import "FTypedefs.h"
 
-NS_ASSUME_NONNULL_BEGIN
+@class FPath;
+@class FRepo;
+@class FIRDatabaseConfig;
 
 /**
- * A generic class to combine several handler blocks into a single block in a thread-safe manner
- */
-@interface FIRInstanceIDCombinedHandler<ResultType> : NSObject
+* Left as instance methods rather than class methods so that we could potentially callback on different queues for different repos.
+* This is semi-parallel to JS's FEventQueue
+*/
+@interface FEventRaiser : NSObject
 
-- (void)addHandler:(void (^)(ResultType _Nullable result, NSError* _Nullable error))handler;
-- (void (^)(ResultType _Nullable result, NSError* _Nullable error))combinedHandler;
+- (id)initWithQueue:(dispatch_queue_t)queue;
+
+- (void) raiseEvents:(NSArray *)eventDataList;
+- (void) raiseCallback:(fbt_void_void)callback;
+- (void) raiseCallbacks:(NSArray *)callbackList;
 
 @end
-
-NS_ASSUME_NONNULL_END

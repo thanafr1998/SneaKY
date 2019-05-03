@@ -12,17 +12,30 @@ import Firebase
 class CartTableViewController: UITableViewController {
 
     static var shoesData = [["name":"white","image":"white","price":"5400"],[],[]] as [Any]
+    var ref: DatabaseReference!
+    var cartData = [NSDictionary]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        ref = Database.database().reference()
+        ref.child("user").child("6031032921").observeSingleEvent(of: .value, with: { (snapshot) in
+            let value = snapshot.value as? [String : Any]
+            for each in value! {
+                self.cartData.append(each.value as! NSDictionary)
+            }
+            self.tableView.reloadData()
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -32,7 +45,7 @@ class CartTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return CartTableViewController.shoesData.count
+        return self.cartData.count
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -43,11 +56,31 @@ class CartTableViewController: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "rentCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "rentCell", for: indexPath) as! TableViewCell
         
-        //cell.imageView?.image =
+        cell.name.text = self.cartData[indexPath.row]["name"] as! String
+
+        let url = URL(string: self.cartData[indexPath.row]["image"] as! String)!
+        cell.imageS.af_setImage(withURL: url, placeholderImage: nil)
         
-        //cell.textLabel?.text =
+        cell.expried.text = self.cartData[indexPath.row]["timestamp"] as! String
+        let str: String! = "\(self.cartData[indexPath.row]["price"])"
+
+        
+        cell.size.text = self.cartData[indexPath.row]["size"] as! String
+        
+        
+        let dateFormatterGet = DateFormatter()
+        dateFormatterGet.dateFormat = "yyyy-MM-dd HH:mm"
+        
+        let dateFormatterPrint = DateFormatter()
+        dateFormatterPrint.dateFormat = "dd/MM/yyyy"
+        
+        if let date = dateFormatterGet.date(from: self.cartData[indexPath.row]["timestamp"] as! String) {
+            cell.expried.text = dateFormatterPrint.string(from: date)
+        } else {
+            print("There was an error decoding the string")
+        }
         
         return cell
     }
